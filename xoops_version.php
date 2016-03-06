@@ -15,8 +15,8 @@
  * @author          trabis <lusopoemas@gmail.com>
  */
 
-$modversion['dirname'] = basename(dirname(__FILE__));
-$modversion['name'] = ucfirst(basename(dirname(__FILE__)));
+$modversion['dirname'] = basename(__DIR__);
+$modversion['name'] = ucfirst(basename(__DIR__));
 $modversion['version'] = '1.0';
 $modversion['description'] = 'This is a basic demo of XMF capabilities.';
 $modversion['author'] = 'Richard Griffith (geekwright)';
@@ -27,7 +27,7 @@ $modversion['help'] = 'page=help';
 $modversion['license'] = "GNU GPL 2 or later";
 $modversion['license_url'] = "http://www.gnu.org/licenses/gpl-2.0.html";
 $modversion['official'] = 0;
-$modversion['image'] = "images/xmfdemo.png";
+$modversion['image'] = "icons/xmfdemo.png";
 
 $modversion['hasMain'] = 1;
 

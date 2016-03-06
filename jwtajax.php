@@ -13,7 +13,11 @@ $assertClaims = array('aud' => basename(__FILE__));
 
 // handle ajax requests
 if (0 === strcasecmp(Request::getHeader('X-Requested-With', ''), 'XMLHttpRequest')) {
-    $xoopsLogger->activated = false;
+    if (class_exists('Xoops')) {
+        \Xoops::getInstance()->logger()->quiet();
+    } else {
+        $xoopsLogger->activated = false;
+    }
     $token = TokenReader::fromHeader('test', $assertClaims);
     if (false === $token) {
         http_response_code(401);
