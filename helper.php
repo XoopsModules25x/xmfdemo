@@ -18,6 +18,7 @@
 // code marker
 use Xmf\Debug;
 use Xmf\Module\Helper;
+
 // code end
 require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 
@@ -26,7 +27,7 @@ include __DIR__ . '/include/header.php';
 describeThis(basename(__FILE__, '.php'));
 
 // code marker
-$dir = basename(__DIR__);
+$dir    = basename(__DIR__);
 $helper = Helper::getHelper($dir);
 $helper->setDebug(true);
 

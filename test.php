@@ -22,9 +22,7 @@ require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 include __DIR__ . '/include/header.php';
 describeThis(basename(__FILE__, '.php'));
 
-
 Debug::dump('Just replace this with your code to play!');
-
 
 codeDump(__FILE__);
 include __DIR__ . '/include/footer.php';

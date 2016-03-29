@@ -11,6 +11,7 @@
 
 // code marker
 use Xmf\Module\Admin;
+
 // code end
 
 /**
@@ -19,7 +20,7 @@ use Xmf\Module\Admin;
  * @author          Richard Griffith <richard@geekwright.com>
  */
 
-require dirname(__FILE__) . '/admin_header.php';
+require __DIR__ . '/admin_header.php';
 
 // code marker
 $moduleAdmin = Admin::getInstance();
@@ -32,4 +33,4 @@ $moduleAdmin->displayIndex();
 // code end
 
 codeDump(__FILE__);
-require dirname(__FILE__) . '/admin_footer.php';
+require __DIR__ . '/admin_footer.php';
