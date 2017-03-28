@@ -58,8 +58,8 @@ $modversion['config'][] = array(
 );
 
 // About stuff
-$modversion['module_status'] = "RC";
-$modversion['release_date'] = '03/04/2016';
+$modversion['module_status'] = "Final";
+$modversion['release_date'] = '03/28/2017';
 
 $modversion['developer_lead'] = "geekwright";
 $modversion['developer_website_url'] = "http://xoops.org";
@@ -69,5 +69,5 @@ $modversion['developer_email'] = "richard@geekwright.com";
 $modversion['people']['developers'][] = "geekwright";
 $modversion['people']['developers'][] = "trabis";
 
-$modversion['min_xoops'] = "2.5.8";
+$modversion['min_xoops'] = "2.5.9";
 $modversion['min_php'] = "5.3.7";
