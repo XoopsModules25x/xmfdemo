@@ -20,6 +20,7 @@ use Xmf\Debug;
 use Xmf\Highlighter;
 use Xmf\Metagen;
 use Xmf\Module\Helper;
+
 // code end
 require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 
@@ -29,8 +30,8 @@ describeThis(basename(__FILE__, '.php'));
 
 // code marker
 // define some dummy content
-$title="xmf - the XOOPS Module Framework";
-$article =<<<EOT
+$title   = 'XMF - the XOOPS Module Framework';
+$article = <<<EOT
 XMF is Copyright © 2011-2016 The XOOPS Project
 
 This program is free software; you can redistribute it and/or modify
@@ -82,7 +83,7 @@ echo Highlighter::apply($keywords, $article);
 
 echo '<br><br><h4>Show a Search Summary</h4>';
 $searchTerms = array('source', 'files');
-$summary = \Xmf\Metagen::getSearchSummary($article, $searchTerms, 80);
+$summary     = \Xmf\Metagen::getSearchSummary($article, $searchTerms, 80);
 echo Highlighter::apply($searchTerms, $summary, '<span style="background-color: yellow;">', '</span>');
 
 // code end

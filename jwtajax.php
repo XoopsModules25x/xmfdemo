@@ -21,7 +21,7 @@ if (0 === strcasecmp(Request::getHeader('X-Requested-With', ''), 'XMLHttpRequest
     $token = TokenReader::fromHeader('test', $assertClaims);
     if (false === $token) {
         http_response_code(401);
-        echo "not authorized";
+        echo 'not authorized';
     } else {
         // The real work can happen here!
         http_response_code(200);

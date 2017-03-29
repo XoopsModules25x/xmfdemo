@@ -1,7 +1,17 @@
-v1.0 2016/03/04
+1.1 Beta 1 2017-03-29
+===============
+- conversion to _DIR_ (mamba)
+- cosmetics (mamba)
+
+1.0 Final 2017-03-28
+===============
+- Final Release (geekwright)
+- Paypal update (geekwright)
+
+1.0 Beta 2016-03-04
 ===============
 - Adapted to XMF 1.0 for XOOPS 2.5.8
 
-v0.1 (Trabis) 2011/09/11
+0.1 (Trabis) 2011-09-11
 =================================
 - Original Release

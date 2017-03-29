@@ -27,10 +27,10 @@ echo '<h3>' . _MA_XMFDEMO_EXAMPLES . '</h3>';
 
 echo "<ul>\n";
 foreach ($files as $file) {
-    if ($file == 'index.php') {
+    if ($file === 'index.php') {
         continue;
     }
-    $name = strtoupper(basename($file, '.php'));
+    $name     = strtoupper(basename($file, '.php'));
     $defTitle = '_MA_XMFDEMO_PAGE_TITLE_' . $name;
     if (defined($defTitle)) {
         $title = constant($defTitle);

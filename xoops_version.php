@@ -15,27 +15,28 @@
  * @author          trabis <lusopoemas@gmail.com>
  */
 
-$modversion['dirname'] = basename(__DIR__);
-$modversion['name'] = ucfirst(basename(__DIR__));
-$modversion['version'] = '1.0';
-$modversion['description'] = 'This is a basic demo of XMF capabilities.';
-$modversion['author'] = 'Richard Griffith (geekwright)';
-$modversion['url'] = "http://xoops.org";
-$modversion['credits'] = "trabis(www.xuups.com)";
-
-$modversion['help'] = 'page=help';
-$modversion['license'] = "GNU GPL 2 or later";
-$modversion['license_url'] = "http://www.gnu.org/licenses/gpl-2.0.html";
-$modversion['official'] = 0;
-$modversion['image'] = "icons/xmfdemo.png";
+$modversion['version']       = '1.1';
+$modversion['module_status'] = 'Beta 1';
+$modversion['release_date']  = '2017/03/29';
+$modversion['dirname']       = basename(__DIR__);
+$modversion['name']          = ucfirst(basename(__DIR__));
+$modversion['description']   = 'This is a basic demo of XMF capabilities.';
+$modversion['author']        = 'Richard Griffith (geekwright)';
+$modversion['url']           = 'http://xoops.org';
+$modversion['credits']       = 'trabis(www.xuups.com)';
+$modversion['help']          = 'page=help';
+$modversion['license']       = 'GNU GPL 2 or later';
+$modversion['license_url']   = 'http://www.gnu.org/licenses/gpl-2.0.html';
+$modversion['official']      = 0;
+$modversion['image']         = 'icons/logo_module.png';
 
 $modversion['hasMain'] = 1;
 
 // Admin things
-$modversion['hasAdmin'] = 1;
+$modversion['hasAdmin']    = 1;
 $modversion['system_menu'] = 1;
-$modversion['adminindex'] = "admin/index.php";
-$modversion['adminmenu']  = "admin/menu.php";
+$modversion['adminindex']  = 'admin/index.php';
+$modversion['adminmenu']   = 'admin/menu.php';
 
 $modversion['config'] = array();
 
@@ -45,7 +46,7 @@ $modversion['config'][] = array(
     'description' => '_MI_XMFDEMO_CONFIG2_DSC',
     'formtype'    => 'textbox',
     'valuetype'   => 'text',
-    'default'     => 'this is my test config1 value',
+    'default'     => 'this is my test config1 value'
 );
 
 $modversion['config'][] = array(
@@ -54,20 +55,17 @@ $modversion['config'][] = array(
     'description' => '_MI_XMFDEMO_CONFIG2_DSC',
     'formtype'    => 'textbox',
     'valuetype'   => 'text',
-    'default'     => 'this is my test config2 value',
+    'default'     => 'this is my test config2 value'
 );
 
 // About stuff
-$modversion['module_status'] = "Final";
-$modversion['release_date'] = '03/28/2017';
+$modversion['developer_lead']         = 'geekwright';
+$modversion['developer_website_url']  = 'http://xoops.org';
+$modversion['developer_website_name'] = 'XOOPS';
+$modversion['developer_email']        = 'richard@geekwright.com';
 
-$modversion['developer_lead'] = "geekwright";
-$modversion['developer_website_url'] = "http://xoops.org";
-$modversion['developer_website_name'] = "Xoops";
-$modversion['developer_email'] = "richard@geekwright.com";
+$modversion['people']['developers'][] = 'geekwright';
+$modversion['people']['developers'][] = 'trabis';
 
-$modversion['people']['developers'][] = "geekwright";
-$modversion['people']['developers'][] = "trabis";
-
-$modversion['min_xoops'] = "2.5.9";
-$modversion['min_php'] = "5.3.7";
+$modversion['min_xoops'] = '2.5.9';
+$modversion['min_php']   = '5.5';

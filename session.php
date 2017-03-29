@@ -30,7 +30,7 @@ describeThis(basename(__FILE__, '.php'));
 // code marker
 echo '<h3>' . _MA_XMFDEMO_SESSION_VAR_TOGGLE . '</h3>';
 // toggle a session variable
-$varName = 'widget';
+$varName       = 'widget';
 $sessionHelper = new Session();
 
 $var = $sessionHelper->get($varName);
@@ -46,7 +46,6 @@ if ($var) {
 Debug::dump($sessionHelper->get($varName, '(not set)'));
 
 Debug::dump($_SESSION, $sessionHelper);
-
 
 // code end
 

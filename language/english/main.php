@@ -17,7 +17,7 @@ EOD
 define('_MA_XMFDEMO_PAGE_TITLE_INDEX', 'XMF XOOPS Module Framework Demo');
 define('_MA_XMFDEMO_PAGE_BODY_INDEX', <<<'EOD'
 <p>This is a collection of short code examples that demonstrate some features of XMF, the XOOPS Module Framework.
-These include several examples from the <a href="https://www.gitbook.com/book/xoops/xmf-cookbook">The XMF Cookbook</a>
+These include several examples from the <a href='https://www.gitbook.com/book/xoops/xmf-cookbook'>The XMF Cookbook</a>
 in ready to run form.
 EOD
 );
@@ -48,7 +48,6 @@ define('_MA_XMFDEMO_TABLE_FORM_TITLE_3', 'Alter the Example Table');
 define('_MA_XMFDEMO_TABLE_FORM_MESSAGE_3', 'Now, we will rename the table, add a new column and populate it.');
 define('_MA_XMFDEMO_TABLE_FORM_TITLE_5', 'Mission Complete');
 define('_MA_XMFDEMO_TABLE_FORM_MESSAGE_5', 'The example table has been altered. Now, we will drop it, and restart the demo.');
-
 
 define('_MA_XMFDEMO_TABLE_CURRENT', 'Current Table State');
 

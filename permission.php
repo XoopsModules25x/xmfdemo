@@ -28,24 +28,24 @@ include __DIR__ . '/include/header.php';
 describeThis(basename(__FILE__, '.php'));
 
 // code marker
-$dir = basename(__DIR__);
+$dir        = basename(__DIR__);
 $permHelper = new Permission($dir);
 
 if ($permHelper) {
     // this is the name and item we are going to work with
-    $gperm_name='xmfdemo-perm';
-    $gperm_itemid=1;
+    $gperm_name   = 'xmfdemo-perm';
+    $gperm_itemid = 1;
 
     // if this is a post operation get and save our variables
-    if ('POST' == Request::getMethod()) {
+    if ('POST' === Request::getMethod()) {
         echo '<h4>$_POST Input</h4>';
         Debug::dump($_POST);
-        $name = $permHelper->defaultFieldName($gperm_name, $gperm_itemid);
+        $name   = $permHelper->defaultFieldName($gperm_name, $gperm_itemid);
         $groups = Request::getVar($name, array(), $hash = 'POST');
         $permHelper->savePermissionForItem($gperm_name, $gperm_itemid, $groups);
     }
 
-    $form = new \XoopsThemeForm(_MA_XMFDEMO_PERMFORM_CAPTION, 'form', '', 'POST');
+    $form       = new \XoopsThemeForm(_MA_XMFDEMO_PERMFORM_CAPTION, 'form', '', 'POST');
     $grpElement = $permHelper->getGroupSelectFormForItem(
         $gperm_name,
         $gperm_itemid,

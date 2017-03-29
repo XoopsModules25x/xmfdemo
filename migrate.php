@@ -28,20 +28,20 @@ include __DIR__ . '/include/header.php';
 describeThis(basename(__FILE__, '.php'));
 
 // code marker
-$dir = basename(__DIR__);
-$helper = Helper::getHelper($dir);
+$dir          = basename(__DIR__);
+$helper       = Helper::getHelper($dir);
 $modulePrefix = $helper->getModule()->getVar('dirname');
 
 $migrate = new Tables();
 
-$uglyTableName = "ugly_{$modulePrefix}_table";
+$uglyTableName   = "ugly_{$modulePrefix}_table";
 $uglyTableExists = $migrate->useTable($uglyTableName);
 
-$mainTableName = "{$modulePrefix}_widgets";
+$mainTableName   = "{$modulePrefix}_widgets";
 $mainTableExists = $migrate->useTable($mainTableName);
 
-$isPost = ('POST' == Request::getMethod());
-$step = 0;
+$isPost = ('POST' === Request::getMethod());
+$step   = 0;
 if (!$uglyTableExists && !$mainTableExists) {
     $step = $isPost ? 2 : 1;
 } elseif ($uglyTableExists) {
@@ -49,7 +49,7 @@ if (!$uglyTableExists && !$mainTableExists) {
 } elseif ($mainTableExists) {
     $step = $isPost ? 6 : 5;
 }
-
+$formMessage = $formCaption = '';
 switch ($step) {
     case 1: // no tables exist
         $formCaption = _MA_XMFDEMO_TABLE_FORM_TITLE_1;
@@ -63,7 +63,7 @@ switch ($step) {
         $migrate->addPrimaryKey($uglyTableName, 'id');
         $migrate->addIndex('uidid', $uglyTableName, 'uid, id');
         $migrate->executeQueue();
-        // fall through
+    // fall through
     case 3: // have initial table
         $formCaption = _MA_XMFDEMO_TABLE_FORM_TITLE_3;
         $formMessage = _MA_XMFDEMO_TABLE_FORM_MESSAGE_3;
@@ -75,7 +75,7 @@ switch ($step) {
         $migrate->dropIndexes($mainTableName);
         $migrate->addIndex('uidupdate_time', $mainTableName, 'uid, update_time');
         $migrate->executeQueue();
-        // fall through
+    // fall through
     case 5: // have renamed table
         $migrate->resetQueue(); // getting the changes for display
         $migrate->useTable($mainTableName);
@@ -98,7 +98,7 @@ $form->addElement(new \XoopsFormButton('', 'submit', _MA_XMFDEMO_FORM_SUBMIT, 's
 echo $form->render();
 
 $tables = $migrate->dumpTables();
-if (!empty($tables)) {
+if (0 !== count($tables)) {
     echo '<h5>' . _MA_XMFDEMO_TABLE_CURRENT . '</h5>';
     Debug::dump($tables);
 }
