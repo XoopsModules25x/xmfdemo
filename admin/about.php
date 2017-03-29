@@ -26,7 +26,7 @@ $moduleAdmin = Admin::getInstance();
 $moduleAdmin->addItemButton('title', 'link.php');
 $moduleAdmin->renderButton();
 $moduleAdmin->displayNavigation('about.php');
-Admin::setPaypal('6KJ7RW5DR3VTJ');
+Admin::setPaypal('xoopsfoundation@gmail.com');
 $moduleAdmin->displayAbout(false);
 // code end
 
