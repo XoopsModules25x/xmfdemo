@@ -15,19 +15,19 @@
  * @author          trabis <lusopoemas@gmail.com>
  */
 
-$modversion['version']     = '1.0';
+$modversion['version']       = '1.1';
 $modversion['module_status'] = 'Beta 1';
 $modversion['release_date']  = '2017/03/29';
-$modversion['dirname']     = basename(__DIR__);
-$modversion['name']        = ucfirst(basename(__DIR__));
-$modversion['description'] = 'This is a basic demo of XMF capabilities.';
-$modversion['author']      = 'Richard Griffith (geekwright)';
-$modversion['url']         = 'http://xoops.org';
-$modversion['credits']     = 'trabis(www.xuups.com)';
-$modversion['help']        = 'page=help';
-$modversion['license']     = 'GNU GPL 2 or later';
-$modversion['license_url'] = 'http://www.gnu.org/licenses/gpl-2.0.html';
-$modversion['official']    = 0;
+$modversion['dirname']       = basename(__DIR__);
+$modversion['name']          = ucfirst(basename(__DIR__));
+$modversion['description']   = 'This is a basic demo of XMF capabilities.';
+$modversion['author']        = 'Richard Griffith (geekwright)';
+$modversion['url']           = 'http://xoops.org';
+$modversion['credits']       = 'trabis(www.xuups.com)';
+$modversion['help']          = 'page=help';
+$modversion['license']       = 'GNU GPL 2 or later';
+$modversion['license_url']   = 'http://www.gnu.org/licenses/gpl-2.0.html';
+$modversion['official']      = 0;
 $modversion['image']         = 'icons/logo_module.png';
 
 $modversion['hasMain'] = 1;
