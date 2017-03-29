@@ -1,5 +1,5 @@
 ![alt XOOPS CMS](http://xoops.org/images/logoXoops4GithubRepository.png)
-##XMF Demo module for  [XOOPS CMS 2.5.9+](https://xoops.org)
+## XMF Demo module for  [XOOPS CMS 2.5.9+](https://xoops.org)
 [![Software License](https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat)](LICENSE)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/XoopsModules25x/xmfdemo.svg?style=flat)](https://scrutinizer-ci.com/g/XoopsModules25x/xmfdemo/?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8b84bfb67174b94a0599e77d831dae6)](https://www.codacy.com/app/mambax7/xmfdemo_2)
