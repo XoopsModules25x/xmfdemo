@@ -1,9 +1,6 @@
-# .scrutinizer.yml
-
 checks:
     php:
         code_rating: true
-        duplication: true
         variable_existence: true
         useless_calls: true
         use_statement_alias_conflict: true

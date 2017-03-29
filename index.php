@@ -20,7 +20,7 @@ require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 include __DIR__ . '/include/header.php';
 
 describeThis(basename(__FILE__, '.php'));
-$files = array();
+
 $files = getFileList(__DIR__);
 
 echo '<h3>' . _MA_XMFDEMO_EXAMPLES . '</h3>';

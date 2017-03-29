@@ -30,7 +30,7 @@ describeThis(basename(__FILE__, '.php'));
 
 // code marker
 // define some dummy content
-$title   = 'xmf - the XOOPS Module Framework';
+$title   = 'XMF - the XOOPS Module Framework';
 $article = <<<EOT
 XMF is Copyright © 2011-2016 The XOOPS Project
 

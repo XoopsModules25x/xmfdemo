@@ -17,10 +17,9 @@
  */
 // code marker
 use Xmf\Debug;
+use Xmf\Request;
 use Xmf\Module\Helper;
 use Xmf\Module\Helper\Permission;
-use Xmf\Request;
-
 // code end
 require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 
@@ -47,7 +46,13 @@ if ($permHelper) {
     }
 
     $form       = new \XoopsThemeForm(_MA_XMFDEMO_PERMFORM_CAPTION, 'form', '', 'POST');
-    $grpElement = $permHelper->getGroupSelectFormForItem($gperm_name, $gperm_itemid, _MA_XMFDEMO_PERM_CAPTION, null, true);
+    $grpElement = $permHelper->getGroupSelectFormForItem(
+        $gperm_name,
+        $gperm_itemid,
+        _MA_XMFDEMO_PERM_CAPTION,
+        null,
+        true
+    );
     $form->addElement($grpElement);
     $form->addElement(new \XoopsFormButton('', 'submit', _MA_XMFDEMO_FORM_SUBMIT, 'submit'));
 
@@ -55,6 +60,7 @@ if ($permHelper) {
 
     $count = count($permHelper->getGroupsForItem($gperm_name, $gperm_itemid));
     echo sprintf(_MA_XMFDEMO_PERM_GROUP_COUNT, $count);
+
 }
 // code end
 

@@ -16,11 +16,10 @@
  * @author          trabis <lusopoemas@gmail.com>
  */
 // code marker
-use Xmf\Database\Tables;
 use Xmf\Debug;
+use Xmf\Database\Tables;
 use Xmf\Module\Helper;
 use Xmf\Request;
-
 // code end
 require_once dirname(dirname(__DIR__)) . '/mainfile.php';
 
